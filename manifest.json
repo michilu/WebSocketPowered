@@ -1,0 +1,20 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "jquery-1.7.1.min.js", "contentscript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Shows the new HTML5 connectivity logo for pages that use the WebSocket",
+   "icons": {
+      "128": "html5-connectivity-128.png",
+      "48": "html5-connectivity-48.png"
+   },
+   "name": "WebSocket Powered",
+   "page_action": {
+      "default_icon": "html5-connectivity-19.png",
+      "default_title": "This page is WebSocket Powered!"
+   },
+   "version": "1.0"
+}
